@@ -1,4 +1,6 @@
 // https://calculator.swiftutors.com/percent-yield-calculator.html
+// https://calculator.swiftutors.com/actual-yield-calculator.html
+// https://calculator.swiftutors.com/theoretical-yield-calculator.html
 
 const v1 =  document.getElementById('v1');
 const v2 = document.getElementById('v2');
@@ -49,10 +51,10 @@ btn.addEventListener('click', function() {
     result.textContent = `Percent Yield = ${computePercentYield().toFixed(2)} %`;
 
   else if(actualYieldRadio.checked)
-    result.textContent = `Actual Yield = ${computeActualYield().toFixed(2)}`;
+    result.textContent = `Actual Yield = ${computeActualYield().toFixed(2)} %`;
 
   else if(theoreticalYieldRadio.checked)
-    result.textContent = `Theoretical Yield = ${computeTheoreticalYield().toFixed(2)}`;
+    result.textContent = `Theoretical Yield = ${computeTheoreticalYield().toFixed(2)} %`;
 })
 
 // calculation
